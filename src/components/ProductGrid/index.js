@@ -24,7 +24,7 @@ const ProductGrid = () => {
                 originalSrc
                 localFile {
                   childImageSharp {
-                    fluid(maxWidth: 910) {
+                    fluid(maxWidth: 910, fit: COVER, cropFocus: CENTER, maxHeight: 910) {
                       ...GatsbyImageSharpFluid_withWebp_tracedSVG
                     }
                   }
@@ -42,7 +42,7 @@ const ProductGrid = () => {
 
   const getPrice = price =>
     Intl.NumberFormat(undefined, {
-      currency: checkout.currencyCode ? checkout.currencyCode : 'EUR',
+      currency: checkout.currencyCode ? checkout.currencyCode : 'USD',
       minimumFractionDigits: 2,
       style: 'currency',
     }).format(parseFloat(price ? price : 0))
@@ -75,8 +75,8 @@ const ProductGrid = () => {
           )
         )
       ) : (
-        <p>No Products found!</p>
-      )}
+          <p>No Products found!</p>
+        )}
     </Grid>
   )
 }
