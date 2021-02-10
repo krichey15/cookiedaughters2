@@ -5,7 +5,11 @@ import { Global, css } from '@emotion/react'
 
 export const breakpoints = {
   s: 576,
+<<<<<<< HEAD
   m: 850,
+=======
+  m: 768,
+>>>>>>> 5447f38dc80c7da38b201d4417217749634d3ba1
   l: 992,
   xl: 1200,
 }
@@ -16,7 +20,10 @@ export const GlobalStyle = props => (
     styles={css`
       body {
         margin: 0;
+<<<<<<< HEAD
         background-color: #E7F2EE
+=======
+>>>>>>> 5447f38dc80c7da38b201d4417217749634d3ba1
       }
       html {
         font-family: sans-serif;
@@ -28,7 +35,11 @@ export const GlobalStyle = props => (
 )
 
 export const Img = styled(Image)`
+<<<<<<< HEAD
   max-width: 100%;
+=======
+  max-width: 100 %;
+>>>>>>> 5447f38dc80c7da38b201d4417217749634d3ba1
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;

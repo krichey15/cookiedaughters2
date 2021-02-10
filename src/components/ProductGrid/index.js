@@ -24,7 +24,11 @@ const ProductGrid = () => {
                 originalSrc
                 localFile {
                   childImageSharp {
+<<<<<<< HEAD
                     fluid(maxWidth: 910, fit: COVER, cropFocus: CENTER, maxHeight: 910) {
+=======
+                    fluid(maxWidth: 910) {
+>>>>>>> 5447f38dc80c7da38b201d4417217749634d3ba1
                       ...GatsbyImageSharpFluid_withWebp_tracedSVG
                     }
                   }
@@ -42,7 +46,11 @@ const ProductGrid = () => {
 
   const getPrice = price =>
     Intl.NumberFormat(undefined, {
+<<<<<<< HEAD
       currency: checkout.currencyCode ? checkout.currencyCode : 'USD',
+=======
+      currency: checkout.currencyCode ? checkout.currencyCode : 'EUR',
+>>>>>>> 5447f38dc80c7da38b201d4417217749634d3ba1
       minimumFractionDigits: 2,
       style: 'currency',
     }).format(parseFloat(price ? price : 0))
@@ -75,8 +83,13 @@ const ProductGrid = () => {
           )
         )
       ) : (
+<<<<<<< HEAD
           <p>No Products found!</p>
         )}
+=======
+        <p>No Products found!</p>
+      )}
+>>>>>>> 5447f38dc80c7da38b201d4417217749634d3ba1
     </Grid>
   )
 }

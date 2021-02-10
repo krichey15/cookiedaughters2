@@ -10,7 +10,11 @@ import Navigation from '~/components/Navigation'
 
 const Wrapper = styled.div`
   margin: 0 auto;
+<<<<<<< HEAD
   max-width: 66%;
+=======
+  max-width: 960px;
+>>>>>>> 5447f38dc80c7da38b201d4417217749634d3ba1
   padding: 0px 1.0875rem 1.45rem;
 `
 
@@ -34,9 +38,15 @@ const Layout = ({ children }) => {
             <Wrapper>
               {children}
               <footer>
+<<<<<<< HEAD
                 © {new Date().getFullYear()} Cookie Daughters, Built by
                 {` `}
                 <a href="https://www.kyle-richey.com">Kyle Richey</a>
+=======
+                © {new Date().getFullYear()}, Built with
+                {` `}
+                <a href="https://www.gatsbyjs.org">Gatsby</a>
+>>>>>>> 5447f38dc80c7da38b201d4417217749634d3ba1
               </footer>
             </Wrapper>
           </>
