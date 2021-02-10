@@ -3,7 +3,7 @@
   "private": true,
   "description": "Cookie Daughters Website",
   "version": "0.0.1",
-  "author": "Kyle Richey <alexander.horl2@live.de>",
+  "author": "Kyle Richey <kyle@kyle-richey.com>",
   "engines": {
     "node": "14.9"
   },

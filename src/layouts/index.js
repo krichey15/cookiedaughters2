@@ -10,7 +10,7 @@ import Navigation from '~/components/Navigation'
 
 const Wrapper = styled.div`
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 66%;
   padding: 0px 1.0875rem 1.45rem;
 `
 
@@ -34,9 +34,9 @@ const Layout = ({ children }) => {
             <Wrapper>
               {children}
               <footer>
-                © {new Date().getFullYear()}, Built with
+                © {new Date().getFullYear()} Cookie Daughters, Built by
                 {` `}
-                <a href="https://www.gatsbyjs.org">Gatsby</a>
+                <a href="https://www.kyle-richey.com">Kyle Richey</a>
               </footer>
             </Wrapper>
           </>
