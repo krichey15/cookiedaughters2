@@ -101,10 +101,7 @@ const ProductForm = ({ product }) => {
       {options.map(({ id, name, values }, index) => (
         <React.Fragment key={id}>
           <label htmlFor={name}>{name} </label>
-<<<<<<< HEAD
           <br />
-=======
->>>>>>> 5447f38dc80c7da38b201d4417217749634d3ba1
           <select
             name={name}
             key={id}
@@ -121,17 +118,11 @@ const ProductForm = ({ product }) => {
             ))}
           </select>
           <br />
-<<<<<<< HEAD
           <br />
         </React.Fragment>
       ))}
       <label htmlFor="quantity">Quantity </label>
       <br />
-=======
-        </React.Fragment>
-      ))}
-      <label htmlFor="quantity">Quantity </label>
->>>>>>> 5447f38dc80c7da38b201d4417217749634d3ba1
       <input
         type="number"
         id="quantity"
@@ -142,10 +133,7 @@ const ProductForm = ({ product }) => {
         value={quantity}
       />
       <br />
-<<<<<<< HEAD
       <br />
-=======
->>>>>>> 5447f38dc80c7da38b201d4417217749634d3ba1
       <button
         type="submit"
         disabled={!available || adding}

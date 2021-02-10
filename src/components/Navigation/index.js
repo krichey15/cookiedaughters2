@@ -1,16 +1,10 @@
 import React, { useContext } from 'react'
 import reduce from 'lodash/reduce'
 import PropTypes from 'prop-types'
-<<<<<<< HEAD
 import Logo from '../../images/cd-logo.jpg'
 
 import StoreContext from '~/context/StoreContext'
 import { CartCounter, Container, MenuLink, Wrapper, Bars, AppLogo, CartBtn, CartBtnLink } from './styles'
-=======
-
-import StoreContext from '~/context/StoreContext'
-import { CartCounter, Container, MenuLink, Wrapper } from './styles'
->>>>>>> 5447f38dc80c7da38b201d4417217749634d3ba1
 
 const useQuantity = () => {
   const {
@@ -21,19 +15,15 @@ const useQuantity = () => {
   return [total !== 0, total]
 }
 
-<<<<<<< HEAD
 const activeStyles = {
   color: '#15cdfc'
 }
 
-=======
->>>>>>> 5447f38dc80c7da38b201d4417217749634d3ba1
 const Navigation = ({ siteTitle }) => {
   const [hasItems, quantity] = useQuantity()
 
   return (
     <Wrapper>
-<<<<<<< HEAD
       <MenuLink to="/">
         {/* <h1>Logo</h1> */}
         <AppLogo src={Logo} alt={siteTitle} />
@@ -54,16 +44,6 @@ const Navigation = ({ siteTitle }) => {
       <Bars />
 
     </Wrapper >
-=======
-      <Container>
-        <MenuLink to="/">{siteTitle}</MenuLink>
-        <MenuLink to="/cart">
-          {hasItems && <CartCounter>{quantity}</CartCounter>}
-          Cart 🛍
-        </MenuLink>
-      </Container>
-    </Wrapper>
->>>>>>> 5447f38dc80c7da38b201d4417217749634d3ba1
   )
 }
 
