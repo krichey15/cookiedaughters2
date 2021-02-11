@@ -24,8 +24,8 @@ export const Container = styled.div`
 `
 
 export const AppLogo = styled.img`
-  height: 50px;
-  width: 50px;
+  height: 100%;
+  width: 100%;
 `
 
 export const MenuLink = styled(Link)`
