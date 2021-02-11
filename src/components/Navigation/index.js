@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import reduce from 'lodash/reduce'
 import PropTypes from 'prop-types'
-import Logo from '../../images/cd-logo.jpg'
+import Logo from '../../images/cookie-logo-small.png'
 
 import StoreContext from '~/context/StoreContext'
 import { CartCounter, Container, MenuLink, Wrapper, Bars, AppLogo, CartBtn, CartBtnLink } from './styles'
