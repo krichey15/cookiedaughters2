@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import Logo from '../../images/cookie-logo-small.png'
 
 import StoreContext from '~/context/StoreContext'
-import { CartCounter, Container, MenuLink, Wrapper, Bars, AppLogo, CartBtn, CartBtnLink } from './styles'
+import { CartCounter, Container, MenuLink, Wrapper, Bars, AppLogo, CartBtn, CartBtnLink, HomeLink } from './styles'
 
 const useQuantity = () => {
   const {
@@ -24,10 +24,9 @@ const Navigation = ({ siteTitle }) => {
 
   return (
     <Wrapper>
-      <MenuLink to="/">
-        {/* <h1>Logo</h1> */}
+      <HomeLink to="/">
         <AppLogo src={Logo} alt={siteTitle} />
-      </MenuLink>
+      </HomeLink>
 
       <Container>
         <MenuLink to="/pre-order" activeStyle={activeStyles}>Pre-Order</MenuLink>
