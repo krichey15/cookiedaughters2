@@ -21,27 +21,25 @@ export const Container = styled.div`
 `
 export const HomeLink = styled(Link)`
   display: flex;
-  aligin-items: center;
+  align-items: center;
   text-decoration: none;
   padding: 0 1rem;
-  height: 100%
+  height: 100%;
   cursor: pointer;
   font-family: 'Sora', sans-serif;
 `
 
 
 export const AppLogo = styled.img`
-  // height: 100%;
-  // width: 100%;
 `
 
 export const MenuLink = styled(Link)`
   color: #441d0c;
   display: flex;
-  aligin-items: center;
+  align-items: center;
   text-decoration: none;
   padding: 0 1rem;
-  height: 100%
+  height: 100%;
   cursor: pointer;
   font-family: 'Sora', sans-serif;
 
@@ -69,12 +67,11 @@ export const Bars = styled(FaBars)`
 
   @media screen and (max-width: ${breakpoints.m}px) {
     display: block;
-    postion: absolute;
+    position: absolute;
     top: 0;
     right: 0;
     transform: translate(-100%, 75%);
     font-size:1.8rem;
-    height: 1.8rem;
     cursor: pointer;
   }
 `
