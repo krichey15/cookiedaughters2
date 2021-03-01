@@ -8,18 +8,18 @@ export const SidebarContainer = styled.aside`
     z-index: 999;
     width: 100%;
     height: 100%;
-    background: #0d0d0d;
+    background: #ebd9c3;
     display: grid;
     align-items: center;
     top: 0;
     left: 0;
     transition: 0.3s ease-in-out;
-    /* opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')}; */
+    opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
+    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `
 
 export const CloseIcon = styled(FaTimes)`
-    color: #fff;
+    color: #441d0c;
 `
 
 export const Icon = styled.div`
@@ -33,7 +33,7 @@ export const Icon = styled.div`
 `
 
 export const SidebarWrapper = styled.div`
-    color: #fff;
+    color: #441d0c;
 `
 
 export const SidebarMenu = styled.ul`
@@ -60,7 +60,7 @@ export const SidebarLink = styled(Link)`
     cursor: pointer;
 
     &:hover {
-        color: #01bf71;
+        color: #9ad3c2;
         transition: 0.2s ease-in-out;
     }
 `
@@ -72,10 +72,10 @@ export const SideBtnWrap = styled.div`
 
 export const SideCartBtn = styled(Link)`
     border-radius: 50px;
-    background: #01bf71;
+    background: #9ad3c2;
     white-space: nowrap;
     padding: 16px 64px;
-    color: #010606;
+    color: #441d0c;
     font-size: 1.5rem;
     outline: none;
     border: none;
@@ -85,7 +85,7 @@ export const SideCartBtn = styled(Link)`
 
     &:hover {
         transition: all 0.2s ease-in-out;
-        background: #fff;
-        color: #010606;
+        background: #fffbf0;
+        color: #9ad3c2;
     }
 `

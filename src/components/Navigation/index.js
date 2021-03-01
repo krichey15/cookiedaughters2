@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import reduce from 'lodash/reduce'
 import PropTypes from 'prop-types'
-import Logo from '../../images/cookie-logo-small.png'
+import Logo from '../../images/cookie-daughters-logo-2-transparent.png'
 
 import StoreContext from '~/context/StoreContext'
 import { CartCounter, Container, MenuLink, Wrapper, Bars, AppLogo, CartBtn, CartBtnLink, HomeLink } from './styles'
@@ -16,10 +16,10 @@ const useQuantity = () => {
 }
 
 const activeStyles = {
-  color: '#15cdfc'
+  color: '#fffbf0'
 }
 
-const Navigation = ({ siteTitle }) => {
+const Navigation = ({ siteTitle, toggle }) => {
   const [hasItems, quantity] = useQuantity()
 
   return (
@@ -32,7 +32,7 @@ const Navigation = ({ siteTitle }) => {
         <MenuLink to="/pre-order" activeStyle={activeStyles}>Pre-Order</MenuLink>
         <MenuLink to="/custom" activeStyle={activeStyles}>Custom Orders</MenuLink>
         <MenuLink to="/about" activeStyle={activeStyles}>About</MenuLink>
-        <MenuLink to="/faq" activeStyle={activeStyles}>F.A.Q.</MenuLink>
+        <MenuLink to="/faq" activeStyle={activeStyles}>FAQ</MenuLink>
       </Container>
 
       <CartBtn>
@@ -40,7 +40,7 @@ const Navigation = ({ siteTitle }) => {
         {hasItems && <CartCounter>{quantity}</CartCounter>}
       </CartBtn>
 
-      <Bars />
+      <Bars onClick={toggle} />
 
     </Wrapper >
   )

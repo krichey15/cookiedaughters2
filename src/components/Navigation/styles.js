@@ -5,7 +5,7 @@ import { FaBars } from 'react-icons/fa'
 import { breakpoints } from '../../utils/styles'
 
 export const Wrapper = styled.nav`
-  background: #fffbf0; 
+  background: #ebd9c3; 
   display: flex;
   justify-content: flex-start;
   height: 80px;
@@ -31,6 +31,7 @@ export const HomeLink = styled(Link)`
 
 
 export const AppLogo = styled.img`
+  height: 100%;
 `
 
 export const MenuLink = styled(Link)`
@@ -50,7 +51,7 @@ export const MenuLink = styled(Link)`
 `
 
 export const CartCounter = styled.span`
-  background-color: white;
+  background-color: #d0edd9;
   color: #441d0c;
   border-radius: 20px;
   padding: 0 10px;
@@ -89,8 +90,8 @@ export const CartBtn = styled.nav`
 `
 
 export const CartBtnLink = styled(Link)`
-  border-radius: 4px;
-  background: #ebd9c3;
+  border-radius: 50px;
+  background: #9ad3c2;
   padding: 10px 22px;
   color: #441d0c;
   border: none;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import styled from '@emotion/styled'
@@ -16,6 +16,12 @@ const Wrapper = styled.div`
 `
 
 const Layout = ({ children }) => {
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggle = () => {
+    setIsOpen(!isOpen)
+  }
+
   return (
     <ContextProvider>
       <GlobalStyle />
@@ -31,8 +37,8 @@ const Layout = ({ children }) => {
         `}
         render={data => (
           <>
-            <Sidebar />
-            <Navigation siteTitle={data.site.siteMetadata.title} />
+            <Sidebar isOpen={isOpen} toggle={toggle} />
+            <Navigation siteTitle={data.site.siteMetadata.title} toggle={toggle} />
             <Wrapper>
               {children}
               <footer>
