@@ -7,6 +7,7 @@ import ContextProvider from '~/provider/ContextProvider'
 
 import { GlobalStyle } from '~/utils/styles'
 import Navigation from '~/components/Navigation'
+import Sidebar from '../components/Sidebar'
 
 const Wrapper = styled.div`
   margin: 0 auto;
@@ -30,6 +31,7 @@ const Layout = ({ children }) => {
         `}
         render={data => (
           <>
+            <Sidebar />
             <Navigation siteTitle={data.site.siteMetadata.title} />
             <Wrapper>
               {children}
