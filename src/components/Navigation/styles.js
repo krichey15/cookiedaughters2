@@ -93,13 +93,14 @@ export const CartBtnLink = styled(Link)`
   border-radius: 50px;
   background: #9ad3c2;
   padding: 10px 22px;
-  color: #441d0c;
+  color: #441d0c !important;
   border: none;
   outline: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   margin-left: 24px;
+  font-size: 1.2rem;
 
   &:hover {
     transition: all 0.2s ease-in-out;

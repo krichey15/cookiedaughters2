@@ -1,7 +1,8 @@
 import React, { useContext } from 'react'
 import reduce from 'lodash/reduce'
 import PropTypes from 'prop-types'
-import Logo from '../../images/cookie-daughters-logo-2-transparent.png'
+import Logo from '../../images/cd-logo-trans-white.png'
+import { RiShoppingCartLine } from 'react-icons/ri'
 
 import StoreContext from '~/context/StoreContext'
 import { CartCounter, Container, MenuLink, Wrapper, Bars, AppLogo, CartBtn, CartBtnLink, HomeLink } from './styles'
@@ -36,7 +37,7 @@ const Navigation = ({ siteTitle, toggle }) => {
       </Container>
 
       <CartBtn>
-        <CartBtnLink to="/cart" activeStyle={activeStyles}>Cart</CartBtnLink>
+        <CartBtnLink to="/cart" activeStyle={activeStyles}><RiShoppingCartLine /></CartBtnLink>
         {hasItems && <CartCounter>{quantity}</CartCounter>}
       </CartBtn>
 

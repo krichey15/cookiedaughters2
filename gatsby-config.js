@@ -31,7 +31,7 @@ module.exports = {
         background_color: `#A5DAC8`,
         theme_color: `#A5DAC8`,
         display: `minimal-ui`,
-        icon: `src/images/cd-logo.jpg`, // This path is relative to the root of the site.
+        icon: `src/images/cookie-daughters-logo-1.jpg`, // This path is relative to the root of the site.
       },
     },
     {
