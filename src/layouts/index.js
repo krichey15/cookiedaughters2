@@ -10,9 +10,7 @@ import Navigation from '~/components/Navigation'
 import Sidebar from '../components/Sidebar'
 
 const Wrapper = styled.div`
-  margin: 0 auto;
-  max-width: 66%;
-  padding: 0px 1.0875rem 1.45rem;
+  max-width: 100%;
 `
 
 const Layout = ({ children }) => {
