@@ -6,11 +6,12 @@ export const SliderSection = styled.section`
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 100px;
+    /* align-items: center; */
 `
 export const SliderImage = styled.img`
-    width: 1000px;
-    height: 600px;
+    width: 1500px;
+    height: 360px;
     border-radius: 10px;
 `
 export const RightArrow = styled(IoIosArrowDroprightCircle)`
