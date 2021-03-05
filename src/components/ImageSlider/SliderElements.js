@@ -9,8 +9,9 @@ export const SliderSection = styled.section`
     align-items: center;
 `
 export const SliderImage = styled.img`
-    width: 1000px;
-    height: 600px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
 `
 export const RightArrow = styled(IoIosArrowDroprightCircle)`
