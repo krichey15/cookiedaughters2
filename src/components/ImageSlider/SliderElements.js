@@ -7,6 +7,7 @@ export const SliderSection = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -10%;
 `
 export const SliderImage = styled.img`
     width: 100%;

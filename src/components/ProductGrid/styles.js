@@ -13,6 +13,7 @@ export const Grid = styled.div`
 `
 
 export const Product = styled.div`
+  margin-top: 10px;
   display: flex;
   min-height: 100%;
   flex-direction: column;
