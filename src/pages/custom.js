@@ -1,8 +1,7 @@
 import React from 'react';
-// import { Link } from 'gatsby'
 import Helmet from 'react-helmet';
-
 import SEO from '~/components/seo';
+import CustomForm from '../components/CustomForm'
 
 const CustomOrderPage = () => (
     <>
@@ -11,7 +10,7 @@ const CustomOrderPage = () => (
             <SEO title="Custom Order" keywords={[`gatsby`, `application`, `react`]} />
         </Helmet>
         <h1>Custom Order Page</h1>
-        {/* <Link to="/page-2/">Go to page 2</Link> */}
+        <CustomForm />
     </>
 )
 

@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Link } from 'gatsby'
 import Helmet from 'react-helmet';
 
 import SEO from '~/components/seo';
@@ -13,8 +12,6 @@ const IndexPage = () => (
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     </Helmet>
     <ImageSlider slides={SliderData} />
-
-    {/* <Link to="/page-2/">Go to page 2</Link> */}
   </>
 )
 

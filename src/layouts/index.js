@@ -39,6 +39,7 @@ const Layout = ({ children }) => {
           <>
             <Sidebar isOpen={isOpen} toggle={toggle} />
             <Navigation siteTitle={data.site.siteMetadata.title} toggle={toggle} />
+            {/* LOGO   */}
             <Wrapper>
               {children}
               <footer>

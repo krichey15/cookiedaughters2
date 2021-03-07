@@ -1,8 +1,8 @@
 import React from 'react';
-// import { Link } from 'gatsby'
 import Helmet from 'react-helmet';
 
 import SEO from '~/components/seo';
+import Cart from '../components/Cart';
 
 const AboutPage = () => (
     <>
@@ -11,7 +11,6 @@ const AboutPage = () => (
             <SEO title="About" keywords={[`gatsby`, `application`, `react`]} />
         </Helmet>
         <h1>About</h1>
-        {/* <Link to="/page-2/">Go to page 2</Link> */}
     </>
 )
 
