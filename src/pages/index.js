@@ -13,6 +13,7 @@ const IndexPage = () => (
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     </Helmet>
     <ImageSlider slides={SliderData} />
+
     {/* <Link to="/page-2/">Go to page 2</Link> */}
   </>
 )
