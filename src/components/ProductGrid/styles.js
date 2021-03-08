@@ -8,14 +8,14 @@ export const Grid = styled.div`
   gap: 2.5rem;
 
   @media (max-width: ${breakpoints.s}px) {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0rem;
   }
 `
 
 export const Product = styled.div`
-  margin-top: 10px;
+  margin: 10px;
   display: flex;
-  min-height: 100%;
   flex-direction: column;
 `
 
