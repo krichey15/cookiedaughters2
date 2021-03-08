@@ -8,7 +8,7 @@ const FaqPage = () => (
     <>
         <Helmet>
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <SEO title="About" keywords={[`gatsby`, `application`, `react`]} />
+            <SEO title="FAQ" keywords={[`gatsby`, `application`, `react`]} />
         </Helmet>
         <LogoThree />
     </>

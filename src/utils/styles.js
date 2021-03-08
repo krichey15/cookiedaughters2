@@ -16,9 +16,12 @@ export const GlobalStyle = props => (
     styles={css`
       body {
         margin: 0;
+        padding: 0;
         background-color: #E7F2EE
       }
       html {
+        margin: 0;
+        padding: 0;
         font-family: sans-serif;
         -ms-text-size-adjust: 100%;
         -webkit-text-size-adjust: 100%;

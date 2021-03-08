@@ -41,11 +41,11 @@ const Layout = ({ children }) => {
             <Navigation siteTitle={data.site.siteMetadata.title} toggle={toggle} />
             <Wrapper>
               {children}
-              <footer>
+              {/* <footer>
                 © {new Date().getFullYear()} Cookie Daughters, Built by
                 {` `}
                 <a href="https://www.kyle-richey.com">Kyle Richey</a>
-              </footer>
+              </footer> */}
             </Wrapper>
           </>
         )}
