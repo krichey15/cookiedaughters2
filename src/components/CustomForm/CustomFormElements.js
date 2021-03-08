@@ -1,9 +1,11 @@
 import styled from '@emotion/styled'
+import { breakpoints } from '../../utils/styles'
+
 
 export const FormContainer = styled.div`
     border-radius: 5px;
     background-color: #fffbf0;
-    padding: 20px;
+    padding: 5%;
 `
 
 export const FormInput = styled.input`
@@ -14,6 +16,10 @@ export const FormInput = styled.input`
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+
+    @media screen and (max-width: ${breakpoints.m}px) {
+        width: 75%;
+    }
 `
 export const CustomSelect = styled.select`
     width: 20%;
@@ -23,6 +29,10 @@ export const CustomSelect = styled.select`
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+
+    @media screen and (max-width: ${breakpoints.m}px) {
+        width: 50%;
+    }
 `
 
 export const CustomText = styled.textarea`
@@ -33,6 +43,10 @@ export const CustomText = styled.textarea`
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+
+    @media screen and (max-width: ${breakpoints.m}px) {
+        width: 75%;
+    }
 `
 
 export const FormButton = styled.button`

@@ -73,7 +73,7 @@ const CustomForm = () => {
                 <FormInput type="file" id="photos" name="photos" />
                 <FormInput type="file" id="photos" name="photos" />
                 <FormInput type="file" id="photos" name="photos" />
-
+                <br />
                 <FormButton type="submit">Bake</FormButton>
 
             </form>
