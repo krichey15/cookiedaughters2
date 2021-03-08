@@ -11,12 +11,14 @@ import {
   GridRight,
 } from '~/utils/styles'
 import { ProductTitle, ProductDescription } from './styles'
+import LogoThree from '../../components/LogoThree'
 
 const ProductPage = ({ data }) => {
   const product = data.shopifyProduct
   return (
     <>
       <SEO title={product.title} description={product.description} />
+      <LogoThree />
       <Container>
         <TwoColumnGrid>
           <GridLeft>
