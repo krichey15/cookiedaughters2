@@ -70,7 +70,9 @@ const CustomForm = () => {
                 </CustomSelect>
 
                 <label htmlFor="photos">Add any inspirational photos here:</label>
-                <FormInput type="file" id="photos" name="photos" multiple />
+                <FormInput type="file" id="photos" name="photos" />
+                <FormInput type="file" id="photos" name="photos" />
+                <FormInput type="file" id="photos" name="photos" />
 
                 <FormButton type="submit">Bake</FormButton>
 
