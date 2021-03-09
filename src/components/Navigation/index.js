@@ -30,7 +30,7 @@ const Navigation = ({ siteTitle, toggle }) => {
       </HomeLink>
 
       <Container>
-        <MenuLink to="/pre-order" activeStyle={activeStyles}>Pre-Order</MenuLink>
+        <MenuLink to="/cookies" activeStyle={activeStyles}>Cookies</MenuLink>
         <MenuLink to="/custom" activeStyle={activeStyles}>Custom Orders</MenuLink>
         <MenuLink to="/about" activeStyle={activeStyles}>About</MenuLink>
         <MenuLink to="/faq" activeStyle={activeStyles}>FAQ</MenuLink>

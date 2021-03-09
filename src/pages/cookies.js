@@ -9,7 +9,7 @@ const PreOrderPage = () => (
     <>
         <Helmet>
             <meta name="viewport" content="width=device-width, initial-scale=1" />
-            <SEO title="Pre-Order" keywords={[`gatsby`, `application`, `react`]} />
+            <SEO title="Cookies" keywords={[`gatsby`, `application`, `react`]} />
         </Helmet>
         <LogoThree />
         <ProductGrid />
