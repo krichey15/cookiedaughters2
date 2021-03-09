@@ -1,26 +1,18 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-site colors:
+
+
+<h1 align="center">
+  <br/>
+  Cookie Daughters Website
+</h1>
+
+## Site colors:
 #d0edd9
 #9ad3c2
 #ebd9c3
 #fffbf0
 #441d0c
 
-<h1 align="center">
-  <img alt="Gatsby" src="resources/shopify+gatsby.png" height="60px" />
-  <br/>
-  Gatsby Shopify starter
-</h1>
-
-[![JamStackBox Status](https://jamstackbox.alexanderhoerl.de/badge/gatsby-shopify-starter)](https://github.com/AlexanderProd/jam-stack-box)
-
-Kick off your next eCommerce experience with this Gatsby starter. It is based on the default Gatsby starter to be easily modifiable. [Demo](https://gatsby-shopify-starter.alexanderhoerl.de)
-
-This starter also includes credentials to a Shopify demo store so you can try it out immediately without having to start a store. To use your own just change the values inside of `.env`.
-
-If you have questions feel free to message me on [Twitter](https://twitter.com/alexanderhorl) 🤙🏻
-
-Checkout [nureineburg.netlify.app](https://nureineburg.netlify.app) for a real public shop built with this starter, the code is also [public](https://github.com/AlexanderProd/nureineburg.de/).  
 
 ## 💎 Features
 
@@ -37,7 +29,7 @@ Checkout [nureineburg.netlify.app](https://nureineburg.netlify.app) for a real p
 The Shopify product inventory is being checked in realtime, therefore no rebuilding and redeploy is needed when a product goes out of stock. This avoids problems where products could still be available even though they're out of stock due to redeploy delay.
 
 ### 🖌 Styling
-I'm using [Emotion](https://emotion.sh/docs/introduction) as styled components library, but the starter is purposely only sparsely styled so you don't have to remove unecessary code but can instead add your own styling immediately.
+I'm using [Emotion](https://emotion.sh/docs/introduction) as styled components library.
 
 ## ⚠️ Common problems
 
@@ -46,25 +38,16 @@ I'm using [Emotion](https://emotion.sh/docs/introduction) as styled components l
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
-
-    Use the Gatsby CLI to create a new site, specifying this starter.
-
-    ```sh
-    # create a new Gatsby site using this starter
-    gatsby new my-shopify-store https://github.com/AlexanderProd/gatsby-shopify-starter
-    ```
-
 1.  **Start developing.**
 
-    Navigate into your new site’s directory and start it up.
+    Navigate into your site’s directory and start it up.
 
     ```sh
     cd my-shopify-store/
     gatsby develop
     ```
 
-1.  **Open the source code and start editing!**
+2.  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
 
@@ -80,22 +63,4 @@ I'm using [Emotion](https://emotion.sh/docs/introduction) as styled components l
     
 ## Deploy
 
-Checkout my other open-source project [JAMStackBox](https://github.com/AlexanderProd/jam-stack-box) to continuously deploy your Gatsby site on your own server.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 📌 ToDo
-
-I'll happily merge any pull request to improve the starter. 🙂
-- [X] Convert Layout to function component.
-- [X] Add dynamic inventory checking to avoid re-building after every purchase. 
-- [X] Add better styling.
-- [X] Add image optimization using Gatsby sharp plugin.
-- [X] Convert ProductForm to function component.
-<!-- AUTO-GENERATED-CONTENT:END -->
+Deployed using Netlify
