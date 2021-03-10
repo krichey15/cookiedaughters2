@@ -58,6 +58,7 @@ export const SidebarLink = styled(Link)`
     transition: 0.2s ease-in-out;
     color:#fff;
     cursor: pointer;
+    font-family: 'BenchNine', sans-serif;
 
     &:hover {
         color: #9ad3c2;
@@ -82,6 +83,7 @@ export const SideCartBtn = styled(Link)`
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
+    font-family: 'BenchNine', sans-serif;
 
     &:hover {
         transition: all 0.2s ease-in-out;

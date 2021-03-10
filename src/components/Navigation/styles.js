@@ -26,7 +26,8 @@ export const HomeLink = styled(Link)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-  font-family: 'Sora', sans-serif;
+  font-family: 'BenchNine', sans-serif;
+
 `
 
 
@@ -42,7 +43,8 @@ export const MenuLink = styled(Link)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-  font-family: 'Sora', sans-serif;
+  font-family: 'BenchNine', sans-serif;
+  font-size: 1.5rem;
 
   @media screen and (max-width: ${breakpoints.m}px) {
     display: none;
@@ -59,6 +61,8 @@ export const CartCounter = styled.span`
   float: right;
   margin: -10px;
   z-index: 20;
+  font-family: 'BenchNine', sans-serif;
+
 `
 
 export const Bars = styled(FaBars)`
