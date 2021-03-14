@@ -4,6 +4,7 @@ export const BannerContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: flex-start;
+
 `
 
 export const BannerImage = styled.img`

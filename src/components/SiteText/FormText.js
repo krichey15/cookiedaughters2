@@ -1,8 +1,9 @@
 import React from 'react'
+import { PageText } from './FormTextElements';
 
 const FormText = () => {
     return (
-        <div>
+        <PageText>
             <p>
                 Hello!  If you’re looking to order custom cookies you’ve come to the right place.  Please fill out all the questions below with as much detail as possible.  The more the better!  Submitting a custom order request does not guarantee that I will be able to take on your order.  After completing your submission you should expect a response from me within 48 hours.
             </p>
@@ -34,7 +35,7 @@ const FormText = () => {
                 Sarah
             </p>
 
-        </div>
+        </PageText>
     )
 }
 

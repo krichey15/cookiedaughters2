@@ -61,7 +61,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Open Sans Condensed`,
+          `Open Sans Condensed\:300`,
           `BenchNine`
         ],
         display: 'swap'
