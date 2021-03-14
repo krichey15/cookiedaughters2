@@ -7,7 +7,6 @@ import LogoThree from '../components/LogoThree'
 const CartPage = () => (
   <Container>
     <LogoThree />
-    <h1>Cart</h1>
     <Cart />
   </Container>
 )

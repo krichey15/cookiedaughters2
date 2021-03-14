@@ -1,13 +1,12 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
-export const Wrapper = styled.div`
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: nowrap;
+export const CartContainer = styled.div`
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    font-size: clamp(1.2rem, 1.25vw, 2rem);
 `
-export const RemoveButton = styled.button`
+
+export const CheckOutButton = styled.button`
     border-radius: 5px;
     background: #9ad3c2;
     padding: 10px 22px;
@@ -25,9 +24,4 @@ export const RemoveButton = styled.button`
         transition: all 0.2s ease-in-out;
         background: #d0edd9;
     }
-`
-
-export const CartImage = styled.img`
-      height: 100px;
-      width: 100px;
 `
