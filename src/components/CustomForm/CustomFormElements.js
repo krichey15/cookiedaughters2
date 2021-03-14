@@ -6,6 +6,10 @@ export const FormContainer = styled.div`
     border-radius: 5px;
     background-color: #fffbf0;
     padding: 5%;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    font-size: clamp(1.2rem, 1.25vw, 2rem);
+
 `
 
 export const FormInput = styled.input`
