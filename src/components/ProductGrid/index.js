@@ -75,8 +75,8 @@ const ProductGrid = () => {
           )
         )
       ) : (
-          <p>No Products found!</p>
-        )}
+        <p>No Cookies Available at this time. Check back soon.</p>
+      )}
     </Grid>
   )
 }

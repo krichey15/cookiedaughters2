@@ -45,6 +45,9 @@ export const Img = styled(Image)`
 export const Container = styled.div`
   margin: 0 auto;
   max-width: 960px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  font-size: clamp(1.2rem, 1.25vw, 2rem);
 `
 
 export const TwoColumnGrid = styled.div`

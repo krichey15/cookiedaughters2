@@ -6,6 +6,10 @@ export const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  font-size: clamp(1.2rem, 1.25vw, 2rem);
+
 
   @media (max-width: ${breakpoints.s}px) {
     grid-template-columns: repeat(2, 1fr);

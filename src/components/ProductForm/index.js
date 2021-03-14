@@ -2,6 +2,7 @@ import React, { useState, useContext, useEffect, useCallback } from 'react'
 import find from 'lodash/find'
 import isEqual from 'lodash/isEqual'
 import PropTypes from 'prop-types'
+import { AddToCartButton } from './PFormElements.js'
 
 import StoreContext from '~/context/StoreContext'
 
@@ -134,13 +135,13 @@ const ProductForm = ({ product }) => {
       />
       <br />
       <br />
-      <button
+      <AddToCartButton
         type="submit"
         disabled={!available || adding}
         onClick={handleAddToCart}
       >
         Add to Cart
-      </button>
+      </AddToCartButton>
       {!available && <p>This Product is out of Stock!</p>}
     </>
   )

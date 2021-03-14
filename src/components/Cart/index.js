@@ -21,10 +21,10 @@ const Cart = () => {
     <CartContainer>
       <h1>Cart</h1>
       {lineItems}
-      <h2>Subtotal</h2>
-      <p>$ {checkout.subtotalPrice}</p>
-      <h2>Taxes</h2>
-      <p>$ {checkout.totalTax}</p>
+      {/* <h2>Subtotal</h2>
+      <p>$ {checkout.subtotalPrice}</p> */}
+      {/* <h2>Taxes</h2>
+      <p>$ {checkout.totalTax}</p> */}
       <h2>Total</h2>
       <p>$ {checkout.totalPrice}</p>
 
