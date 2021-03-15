@@ -2,6 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 import SEO from '~/components/seo';
+import Accordion from '../components/Accordion';
 import LogoThree from '../components/LogoThree';
 
 const FaqPage = () => (
@@ -11,6 +12,7 @@ const FaqPage = () => (
             <SEO title="FAQ" keywords={[`gatsby`, `application`, `react`]} />
         </Helmet>
         <LogoThree />
+        <Accordion />
     </>
 )
 
