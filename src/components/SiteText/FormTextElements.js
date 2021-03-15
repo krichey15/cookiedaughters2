@@ -5,3 +5,8 @@ export const PageText = styled.div`
     font-weight: 300;
     font-size: clamp(1.2rem, 1.5vw, 2rem);
 `
+
+export const BoldParagraph = styled.p`
+    font-family: 'BenchNine', sans-serif;
+    font-weight: 700;
+`
