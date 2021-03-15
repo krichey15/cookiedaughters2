@@ -4,7 +4,7 @@ import { CustomSelect, CustomText, FormButton, FormContainer, FormInput } from '
 const CustomForm = () => {
     return (
         <FormContainer>
-            <form name="contact" method="POST" data-netlify="true">
+            <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
                 <input type="hidden" name="form-name" value="contact" />
 
                 <label htmlFor="name">Name: </label>
