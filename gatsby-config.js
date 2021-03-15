@@ -62,7 +62,9 @@ module.exports = {
       options: {
         fonts: [
           `Open Sans Condensed\:300`,
-          `BenchNine`
+          `Open Sans Condensed\:700`,
+          `BenchNine`,
+          `BenchNine\:700`
         ],
         display: 'swap'
       },
