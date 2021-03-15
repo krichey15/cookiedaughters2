@@ -2,6 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 import SEO from '~/components/seo';
+import ContactForm from '../components/Contact';
 import LogoThree from '../components/LogoThree';
 
 const ContactPage = () => (
@@ -11,6 +12,7 @@ const ContactPage = () => (
             <SEO title="Contact" keywords={[`gatsby`, `application`, `react`]} />
         </Helmet>
         <LogoThree />
+        <ContactForm />
     </>
 )
 
