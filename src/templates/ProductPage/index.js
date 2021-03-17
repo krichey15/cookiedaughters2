@@ -17,7 +17,7 @@ const ProductPage = ({ data }) => {
   const product = data.shopifyProduct
   return (
     <>
-      <SEO title={product.title} description={product.description} />
+      {/* <SEO title={product.title} description={product.description} /> */}
       <LogoThree />
       <Container>
         <TwoColumnGrid>
