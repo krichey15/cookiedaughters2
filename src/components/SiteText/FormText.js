@@ -20,7 +20,7 @@ const FormText = () => {
                         <li>Price is dependent on design, number of colors/shapes needed and any added detail/metallics/character design etc.  Character cookies start at $65.</li>
                     </ul>
                 </li>
-                <li>1 dozen Mini Lemon Vanilla Mini Cookies add on - $20/dozen</li>
+                <li>1 dozen Mini Vanilla Lemon Cookies add on - $20/dozen</li>
                 <li>Cookie Cake Topper - $15+ (price dependent on size and detail of design)</li>
                 <li>Cookies can be wrapped with a bow for an additional $8/dozen</li>
             </ul>

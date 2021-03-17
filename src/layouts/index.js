@@ -8,6 +8,7 @@ import ContextProvider from '~/provider/ContextProvider'
 import { GlobalStyle } from '~/utils/styles'
 import Navigation from '~/components/Navigation'
 import Sidebar from '../components/Sidebar'
+import Footer from '../components/Footer'
 
 const Wrapper = styled.div`
   margin: 0 auto;
@@ -41,12 +42,8 @@ const Layout = ({ children }) => {
             <Navigation siteTitle={data.site.siteMetadata.title} toggle={toggle} />
             <Wrapper>
               {children}
-              {/* <footer>
-                © {new Date().getFullYear()} Cookie Daughters, Built by
-                {` `}
-                <a href="https://www.kyle-richey.com">Kyle Richey</a>
-              </footer> */}
             </Wrapper>
+            <Footer/>
           </>
         )}
       />
