@@ -5,7 +5,7 @@ import { FaBars } from 'react-icons/fa'
 import { breakpoints } from '../../utils/styles'
 
 export const Wrapper = styled.nav`
-  background: #ebd9c3; 
+  background: #fff; 
   display: flex;
   justify-content: flex-start;
   height: 80px;
@@ -108,7 +108,7 @@ export const CartBtnLink = styled(Link)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #fffbf0;
+    background: #d0edd9;
     color: #9ad3c2;
   }
 `

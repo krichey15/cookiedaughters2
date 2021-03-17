@@ -36,7 +36,7 @@ const ProductForm = ({ product }) => {
         }
       })
     },
-    [client.product, productVariant.shopifyId, variants]
+    [client.product, productVariant.shopifyId]
   )
 
   useEffect(() => {
@@ -99,14 +99,14 @@ const ProductForm = ({ product }) => {
   return (
     <>
       <h3>{price}</h3>
-      {/* {options.map(({ id, name, values }, index) => (
+      {options.map(({ id, name, values }, index) => (
         <React.Fragment key={id}>
           <label htmlFor={name}>{name} </label>
           <br />
           <select
             name={name}
             key={id}
-            onChange={event => handleOptionChange(index, event)}
+            onBlur={event => handleOptionChange(index, event)}
           >
             {values.map(value => (
               <option
@@ -121,7 +121,7 @@ const ProductForm = ({ product }) => {
           <br />
           <br />
         </React.Fragment>
-      ))} */}
+      ))}
       <label htmlFor="quantity">Quantity </label>
       <br />
       <input

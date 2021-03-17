@@ -17,7 +17,7 @@ export const GlobalStyle = props => (
       body {
         margin: 0;
         padding: 0;
-        background-color: #E7F2EE
+        background-color: #fff
       }
       html {
         margin: 0;

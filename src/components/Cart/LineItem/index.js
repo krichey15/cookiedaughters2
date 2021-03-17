@@ -18,15 +18,16 @@ const LineItem = props => {
     />
   ) : null
 
-  // const selectedOptions = item.variant.selectedOptions
-  //   ? item.variant.selectedOptions.map(
-  //     option => `${option.name}: ${option.value} `
-  //   )
-  //   : null
+  const selectedOptions = item.variant.selectedOptions
+    ? item.variant.selectedOptions.map(
+      option => `${option.name}:\xa0\xa0${option.value} \xa0\xa0\xa0\xa0`
+    )
+    : null
 
   const handleRemove = () => {
     removeLineItem(client, checkout.id, item.id)
   }
+
 
   return (
     <Wrapper>
@@ -38,8 +39,9 @@ const LineItem = props => {
         {item.title}
         {`  `}
       </p>
-      {/* {selectedOptions} */}
+      {selectedOptions}
       <p>
+        Qty:&nbsp;
         {item.quantity}
       </p>
 

@@ -6,7 +6,7 @@ export const AccordionContainer = styled.div`
     align-items: center;
     justify-content: center;
     position: relative;
-    background: #E7F2EE;
+    background: #fff;
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 300;
     font-size: clamp(1rem, 1.5vw, 1.25rem);
@@ -18,7 +18,7 @@ export const FaqContainer = styled.div`
 `
 
 export const QuestionWrapper = styled.div`
-    background: #E7F2EE;
+    background: #fff;
     color: #000;
     display: flex;
     justify-content: space-between;
@@ -37,7 +37,7 @@ export const QuestionWrapper = styled.div`
 `
 
 export const AnswerDropdown = styled.div`
-    background: #E7F2EE;
+    background: #fff;
     color: #000;
     width: 100%;
     display: flex;

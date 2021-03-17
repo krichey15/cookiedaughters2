@@ -3,7 +3,7 @@ import { FaRegEnvelope } from 'react-icons/fa'
 import { GrMapLocation } from 'react-icons/gr'
 
 export const ContactSection = styled.section`
-    background-color: #E7F2EE;
+    background-color: #fff;
     padding: 2rem 0;
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;

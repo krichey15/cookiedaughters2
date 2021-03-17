@@ -17,7 +17,7 @@ const useQuantity = () => {
 }
 
 const activeStyles = {
-  color: '#fffbf0'
+  color: '#9ad3c2'
 }
 
 const Navigation = ({ siteTitle, toggle }) => {
