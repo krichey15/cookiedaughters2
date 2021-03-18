@@ -1,18 +1,19 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 
-
 <h1 align="center">
   <br/>
   Cookie Daughters Website
 </h1>
 
 ## Site colors:
+
 #d0edd9
 #9ad3c2
 #ebd9c3
 #fffbf0
 #441d0c
-
+#fff
+#000
 
 ## 💎 Features
 
@@ -26,9 +27,11 @@
 - SEO
 
 ### 📦 Dynamic Inventory Checking
+
 The Shopify product inventory is being checked in realtime, therefore no rebuilding and redeploy is needed when a product goes out of stock. This avoids problems where products could still be available even though they're out of stock due to redeploy delay.
 
 ### 🖌 Styling
+
 I'm using [Emotion](https://emotion.sh/docs/introduction) as styled components library.
 
 ## ⚠️ Common problems
@@ -55,12 +58,25 @@ I'm using [Emotion](https://emotion.sh/docs/introduction) as styled components l
 
     Open the `my-shopify-store` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-1. **Connect your own Shopify store.**
+3.  **Connect your own Shopify store.**
 
     Open both `.env` files located in the root directory of your page end replace the credentials with your own. Don't forget to restart Gatsby for your store to be loaded!
 
     ⚠️ Make sure to use the Shopify storefront API credentials, not the regular Shopify API!
-    
+
 ## Deploy
 
 Deployed using Netlify
+Hosted by GoDaddy
+
+## Form
+
+The form is being validated using Netlify and being sent to client using Zapier.
+
+## Photos
+
+-- For best results Product Photos should square and at least 100px X 100px.
+
+<!-- TO DO: Find Banner Photo Size -->
+
+-- The Banner on the home page is
