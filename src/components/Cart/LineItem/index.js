@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { Link } from 'gatsby'
 
 import StoreContext from '~/context/StoreContext'
-import { CartGrid, CartImage, QtyUpdateButton, RemoveButton, Wrapper } from './styles'
+import { CartImage, QtyUpdateButton, RemoveButton, Wrapper } from './styles'
 
 const LineItem = props => {
   const { item } = props

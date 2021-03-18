@@ -106,7 +106,7 @@ const ProductForm = ({ product }) => {
           <select
             name={name}
             key={id}
-            onBlur={event => handleOptionChange(index, event)}
+            onChange={event => handleOptionChange(index, event)}
           >
             {values.map(value => (
               <option

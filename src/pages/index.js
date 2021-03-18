@@ -3,8 +3,8 @@ import Helmet from 'react-helmet';
 
 // import SEO from '~/components/seo';
 import Banner from '../components/Banner';
-import ImageSlider from '../components/ImageSlider';
-import { SliderData } from '../components/ImageSlider/SliderData';
+// import ImageSlider from '../components/ImageSlider';
+// import { SliderData } from '../components/ImageSlider/SliderData';
 import LogoThree from '../components/LogoThree';
 
 const IndexPage = () => (

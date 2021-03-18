@@ -1,7 +1,7 @@
 import React from 'react'
 import { IoLogoFacebook, IoLogoInstagram } from 'react-icons/io'
 import { IoLogoTiktok } from 'react-icons/io5'
-import { ContactDiv, ContactSection, StyledAnchorTag, StyledEnv, StyledHTwo, StyledLineItem, StyledMap, StyledInsta, StyledFacebook, StyledTikTok, IconUl } from './ContactElements'
+import { ContactDiv, ContactSection, StyledAnchorTag, StyledEnv, StyledHTwo, StyledLineItem, StyledMap, IconUl } from './ContactElements'
 
 const ContactForm = () => {
     return (
