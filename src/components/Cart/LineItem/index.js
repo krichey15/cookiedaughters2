@@ -2,12 +2,12 @@ import React, { useContext } from 'react'
 import { Link } from 'gatsby'
 
 import StoreContext from '~/context/StoreContext'
-import { CartImage, RemoveButton, Wrapper } from './styles'
+import { CartGrid, CartImage, QtyUpdateButton, RemoveButton, Wrapper } from './styles'
 
 const LineItem = props => {
   const { item } = props
   const {
-    removeLineItem,
+    removeLineItem, updateLineItem,
     store: { client, checkout },
   } = useContext(StoreContext)
 
@@ -20,7 +20,7 @@ const LineItem = props => {
 
   const selectedOptions = item.variant.selectedOptions
     ? item.variant.selectedOptions.map(
-      option => `${option.name}:\xa0\xa0${option.value} \xa0\xa0\xa0\xa0`
+      option => `${option.name}:\xa0${option.value} `
     )
     : null
 
@@ -28,25 +28,37 @@ const LineItem = props => {
     removeLineItem(client, checkout.id, item.id)
   }
 
+  const handleInput = ({ target }) => {
+    switch (target.name) {
+      case 'plus':
+        updateLineItem(client, checkout.id, item.id, item.quantity + 1)
+        break;
+      case 'minus':
+        updateLineItem(client, checkout.id, item.id, item.quantity - 1)
+        break;
+      default:
+        break;
+    }
+  }
+
 
   return (
-    <Wrapper>
-      {console.log(item)}
-      <Link to={`/product/${item.variant.product.handle}/`}>
-        {variantImage}
-      </Link>
-      <p>
-        {item.title}
-        {`  `}
-      </p>
-      {selectedOptions}
-      <p>
-        Qty:&nbsp;
+      <Wrapper>
+        {console.log(item)}
+        <Link to={`/product/${item.variant.product.handle}/`}>
+          {variantImage}
+        </Link>
+        <p>
+          {item.title}
+          {`  `}
+        </p>
+        {selectedOptions}
+        <QtyUpdateButton onClick={handleInput} name="minus">-</QtyUpdateButton>
         {item.quantity}
-      </p>
+        <QtyUpdateButton onClick={handleInput} name="plus">+</QtyUpdateButton>
 
-      <RemoveButton onClick={handleRemove}>Remove</RemoveButton>
-    </Wrapper>
+        <RemoveButton onClick={handleRemove}>Remove</RemoveButton>
+      </Wrapper>
   )
 }
 

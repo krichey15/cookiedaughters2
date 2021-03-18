@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import SEO from '~/components/seo'
+// import SEO from '~/components/seo'
 import ProductForm from '~/components/ProductForm'
 import {
   Img,
@@ -17,7 +17,7 @@ const ProductPage = ({ data }) => {
   const product = data.shopifyProduct
   return (
     <>
-      {/* <SEO title={product.title} description={product.description} /> */}
+      {/* <SEO title="Cookies" description={product.description} /> */}
       <LogoThree />
       <Container>
         <TwoColumnGrid>
