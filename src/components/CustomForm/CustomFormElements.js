@@ -64,6 +64,9 @@ export const FormButton = styled.button`
     transition: all 0.2s ease-in-out;
     text-decoration: none;
     font-size: 1.2rem;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+
 
     &:hover {
         transition: all 0.2s ease-in-out;
