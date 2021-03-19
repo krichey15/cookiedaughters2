@@ -4,7 +4,7 @@ import { CustomSelect, CustomText, FormButton, FormContainer, FormInput } from '
 const CustomForm = () => {
     return (
         <FormContainer>
-            <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+            <form name="contact" method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />
 
                 <label htmlFor="name">Name: </label>
@@ -83,8 +83,7 @@ const CustomForm = () => {
                 <FormInput type="file" id="photos2" name="photos2" placeholder="Upload Photo"/>
                 <FormInput type="file" id="photos3" name="photos3" placeholder="Upload Photo" />
                 <br />
-                <div data-netlify-recaptcha="true"></div>
-
+                
                 <FormButton type="submit">Bake</FormButton>
 
             </form>
