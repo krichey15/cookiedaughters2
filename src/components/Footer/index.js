@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FooterP } from './FooterElements';
 
 const Footer = () => {
@@ -6,9 +6,9 @@ const Footer = () => {
     return (
         <div>
             <FooterP>
-            © {new Date().getFullYear()} Cookie Daughters, Built by
+                © {new Date().getFullYear()} Cookie Daughters, Built by
             {` `}
-            <a href="https://www.kyle-richey.com">Kyle Richey</a>
+                <a href="https://www.kyle-richey.com">Kyle Richey</a>
             </FooterP>
         </div>
     );
