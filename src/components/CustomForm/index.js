@@ -21,11 +21,11 @@ const CustomForm = () => {
                 <FormInput type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
 
                 <label htmlFor="date">Date Needed:</label>
-                <FormInput type="date" id="date" name="date"  required />
+                <FormInput type="date" id="date" name="date" required />
                 <p><small>Not the day of the event - usually 1 or 2 days before.  What day do you need to be holding your cookies?</small></p>
 
                 <label htmlFor="cookie-count">How many cookies would you like to order?</label>
-                <FormInput type="number" id="cookie-count" name="cookie-count" max="100000" min="12"  placeholder="12" required />
+                <FormInput type="number" id="cookie-count" name="cookie-count" max="100000" min="12" placeholder="12" required />
                 <p><small>Min is 1 dozen but you can order 17 cookies if that is how many you need.</small></p>
 
                 <label htmlFor="mini-cookies">Would you like to add 1 dozen mini-cookies?</label>
@@ -80,8 +80,8 @@ const CustomForm = () => {
 
 
                 <label htmlFor="photos">Add any inspirational photos here:</label>
-                <FormInput type="file" id="photos" name="photos" placeholder="Upload Photo"/>
-                <FormInput type="file" id="photos2" name="photos2" placeholder="Upload Photo"/>
+                <FormInput type="file" id="photos" name="photos" placeholder="Upload Photo" />
+                <FormInput type="file" id="photos2" name="photos2" placeholder="Upload Photo" />
                 <FormInput type="file" id="photos3" name="photos3" placeholder="Upload Photo" />
                 <br />
 
