@@ -65,10 +65,12 @@ const ContextProvider = ({ children }) => {
     }
 
     initializeCheckout()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [store.client.checkout])
 
   useEffect(
     () => () => {
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       isRemoved = true
     },
     []
