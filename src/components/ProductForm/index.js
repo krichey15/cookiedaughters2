@@ -2,8 +2,7 @@ import React, { useState, useContext, useEffect, useCallback } from 'react'
 import find from 'lodash/find'
 import isEqual from 'lodash/isEqual'
 import PropTypes from 'prop-types'
-import { AddToCartButton } from './PFormElements.js'
-
+import { AddToCartButton } from './PFormElements'
 import StoreContext from '~/context/StoreContext'
 
 const ProductForm = ({ product }) => {
@@ -96,6 +95,20 @@ const ProductForm = ({ product }) => {
     style: 'currency',
   }).format(variant.price)
 
+  const text = "Add To Cart";
+  const [buttonText, setButtonText] = useState(text);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setButtonText(text);
+    }, 1000);
+    return () => clearTimeout(timer);
+  }, [buttonText])
+
+  const handleClick = (text) => {
+    setButtonText(text);
+    handleAddToCart();
+  }
+
   return (
     <>
       <h3>{price}</h3>
@@ -138,9 +151,9 @@ const ProductForm = ({ product }) => {
       <AddToCartButton
         type="submit"
         disabled={!available || adding}
-        onClick={handleAddToCart}
+        onClick={() => handleClick("Added")}
       >
-        Add to Cart
+        {buttonText}
       </AddToCartButton>
       {!available && <p>This Product is out of Stock!</p>}
     </>
