@@ -5,7 +5,7 @@ const CustomForm = () => {
 
     return (
         <FormContainer>
-            <form name="contact" method="POST" data-netlify="true">
+            <form name="contact" method="POST" enctype="multipart/form-data" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />
 
                 <label htmlFor="name">Name: </label>
@@ -25,7 +25,7 @@ const CustomForm = () => {
                 <p><small>Not the day of the event - usually 1 or 2 days before.  What day do you need to be holding your cookies?</small></p>
 
                 <label htmlFor="cookie-count">How many cookies would you like to order?</label>
-                <FormInput type="number" id="cookie-count" name="cookie-count" max="100000" min="12" placeholder="12" required />
+                <FormInput type="number" id="cookie-count" name="cookie-count" min="12" max="100000" placeholder="12" required />
                 <p><small>Min is 1 dozen but you can order 17 cookies if that is how many you need.</small></p>
 
                 <label htmlFor="mini-cookies">Would you like to add 1 dozen mini-cookies?</label>
