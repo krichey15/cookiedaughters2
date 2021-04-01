@@ -80,9 +80,9 @@ const CustomForm = () => {
 
 
                 <label htmlFor="photos">Add any inspirational photos here:</label>
-                <FormInput type="file" id="photos" name="photos" placeholder="Upload Photo" />
-                <FormInput type="file" id="photos2" name="photos2" placeholder="Upload Photo" />
-                <FormInput type="file" id="photos3" name="photos3" placeholder="Upload Photo" />
+                <FormInput type="file" id="photos" name="photos" placeholder="Upload Photo" accept="image/*,.pdf" />
+                <FormInput type="file" id="photos2" name="photos2" placeholder="Upload Photo" accept="image/*,.pdf" />
+                <FormInput type="file" id="photos3" name="photos3" placeholder="Upload Photo" accept="image/*,.pdf" />
                 <br />
 
                 <FormButton type="submit">Bake</FormButton>
