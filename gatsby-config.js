@@ -44,6 +44,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-flickr`,
+      options: {
+        api_key: process.env.FLICKR_API_KEY,
+        user_id: process.env.FLICKR_USER_ID
+      },
+    },
+    {
       resolve: 'gatsby-plugin-root-import',
       options: {
         '~': path.join(__dirname, 'src/'),
