@@ -1,5 +1,5 @@
 import React from 'react';
-import Valentine from '../../images/valentine-cookies.jpg'
+import Valentine from '../../images/home-banner.jpg'
 import { BannerContainer, BannerImage } from './BannerElements';
 
 const Banner = () => {

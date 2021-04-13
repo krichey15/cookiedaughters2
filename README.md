@@ -77,6 +77,7 @@ The form is being validated using Netlify and being sent to client using Zapier.
 
 -- For best results Product Photos should square and at least 100px X 100px.
 
-<!-- TO DO: Find Banner Photo Size -->
-
--- The Banner on the home page is
+Other image sizes:
+-Home Page Banner: 1500 x 720px (However this can be any height. 1500px width can change but it won't look as good.)
+-Announcement Banner: 1500 x 100px (This Banner is added through the Flickr API which is set up to display the most recent new photo added to the photostream. Used Zapier to watch for this.)
+-
