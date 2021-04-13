@@ -22,8 +22,8 @@ const Accordion = () => {
                 <FaqContainer>
                     {FaqData.map((item, index) => {
                         return (
-                            <>
-                                <QuestionWrapper onClick={() => toggle(index)} key={index}>
+                            <React.Fragment key={index}>
+                                <QuestionWrapper onClick={() => toggle(index)}>
                                     <h2>{item.question}</h2>
                                     <span>{clicked === index ? <FiMinus /> : <FiPlus />}</span>
                                 </QuestionWrapper>
@@ -32,7 +32,7 @@ const Accordion = () => {
                                         <p>{item.answer}</p>
                                     </AnswerDropdown>
                                 ) : null}
-                            </>
+                            </React.Fragment>
                         )
                     })}
                 </FaqContainer>

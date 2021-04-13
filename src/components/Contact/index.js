@@ -2,10 +2,14 @@ import React from 'react'
 import { IoLogoFacebook, IoLogoInstagram } from 'react-icons/io'
 import { IoLogoTiktok } from 'react-icons/io5'
 import { ContactDiv, ContactSection, StyledAnchorTag, StyledEnv, StyledHTwo, StyledLineItem, StyledMap, IconUl } from './ContactElements'
+import Mixer from '../../images/sarah-mixer.jpg'
 
 const ContactForm = () => {
     return (
         <ContactSection>
+            <div>
+                <img src={Mixer} />
+            </div>
             <ContactDiv>
                 <StyledHTwo>Contact us</StyledHTwo>
                 <IconUl>

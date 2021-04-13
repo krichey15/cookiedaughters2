@@ -9,6 +9,7 @@ export const ContactSection = styled.section`
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 300;
     font-size: clamp(1.2rem, 1.5vw, 2rem);
+    display: grid;
 `
 
 export const ContactDiv = styled.div`
