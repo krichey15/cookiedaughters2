@@ -1,15 +1,17 @@
 import React from 'react'
 import { IoLogoFacebook, IoLogoInstagram } from 'react-icons/io'
 import { IoLogoTiktok } from 'react-icons/io5'
-import { ContactDiv, ContactSection, StyledAnchorTag, StyledEnv, StyledHTwo, StyledLineItem, StyledMap, IconUl } from './ContactElements'
+import { ContactDiv, ContactSection, StyledAnchorTag, StyledEnv, StyledHTwo, StyledLineItem, StyledMap, IconUl, MixerContainer, MixerImage } from './ContactElements'
 import Mixer from '../../images/sarah-mixer.jpg'
 
 const ContactForm = () => {
     return (
         <ContactSection>
-            <div>
-                <img src={Mixer} />
-            </div>
+
+            <MixerContainer>
+                <MixerImage src={Mixer} alt="sarah mixer" />
+            </MixerContainer>
+
             <ContactDiv>
                 <StyledHTwo>Contact us</StyledHTwo>
                 <IconUl>
@@ -30,7 +32,6 @@ const ContactForm = () => {
                         <StyledAnchorTag href="https://goo.gl/maps/3mYYmP52UiSrF8hKA" target="_blank">Sequim, WA</StyledAnchorTag>
                     </StyledLineItem>
                 </ul>
-
             </ContactDiv>
 
         </ContactSection>

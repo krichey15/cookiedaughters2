@@ -9,12 +9,21 @@ export const ContactSection = styled.section`
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 300;
     font-size: clamp(1.2rem, 1.5vw, 2rem);
-    display: grid;
+`
+
+export const MixerContainer = styled.div`
+    float: left;
+    width: 50%;
+    justify-content: center;
+    align-items: flex-start;
+`
+export const MixerImage = styled.img`
+    width: 100%;
 `
 
 export const ContactDiv = styled.div`
-    display: inline-block;
     text-align: left;
+    float: left;
 `
 
 export const StyledHTwo = styled.h2`
@@ -28,6 +37,7 @@ export const StyledLineItem = styled.li`
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    list-style-type: none;
 `
 
 export const StyledAnchorTag = styled.a`
