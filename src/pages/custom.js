@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import CustomForm from '../components/CustomForm'
 import LogoThree from '../components/LogoThree';
 import FormText from '../components/SiteText/FormText';
+import Announcement from '../components/Announcement';
 
 const CustomOrderPage = () => (
     <>
@@ -11,6 +12,7 @@ const CustomOrderPage = () => (
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             {/* <SEO title="Custom Order" keywords={[`gatsby`, `application`, `react`]} /> */}
         </Helmet>
+        <Announcement />
         <LogoThree />
         <FormText />
         <CustomForm />
