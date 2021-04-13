@@ -5,7 +5,7 @@ const CustomForm = () => {
 
     return (
         <FormContainer>
-            <form name="contact" method="POST" enctype="multipart/form-data" data-netlify="true">
+            <form name="contact" method="POST" encType="multipart/form-data" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />
 
                 <label htmlFor="name">Name: </label>
@@ -29,22 +29,22 @@ const CustomForm = () => {
                 <p><small>Min is 1 dozen but you can order 17 cookies if that is how many you need.</small></p>
 
                 <label htmlFor="mini-cookies">Would you like to add 1 dozen mini-cookies?</label>
-                <CustomSelect id="mini-cookies" name="mini-cookies">
-                    <option selected disabled value=""> -Y or N-</option>
+                <CustomSelect id="mini-cookies" name="mini-cookies" defaultValue="-Y or N-">
+                    <option disabled value="-Y or N-">-Y or N-</option>
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
                 </CustomSelect>
 
                 <label htmlFor="cake-topper">Would you like to add on a cake topper?</label>
-                <CustomSelect id="cake-topper" name="cake-topper">
-                    <option selected disabled value=""> -Y or N-</option>
+                <CustomSelect id="cake-topper" name="cake-topper" defaultValue="-Y or N-">
+                    <option disabled value="-Y or N-">-Y or N-</option>
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
                 </CustomSelect>
 
                 <label htmlFor="individual">Do you need your cookies individually wrapped with a bow?</label>
-                <CustomSelect id="individual" name="individual">
-                    <option selected disabled value=""> -Y or N-</option>
+                <CustomSelect id="individual" name="individual" defaultValue="-Y or N-">
+                    <option disabled value="-Y or N-">-Y or N-</option>
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
                 </CustomSelect>
@@ -54,8 +54,8 @@ const CustomForm = () => {
                 <p><small>Give me all the details!  What shape of cookies, colors, vibe, style, a name, specific animal, year etc.?</small></p>
 
                 <label htmlFor="event">Are these cookies for an event?</label>
-                <CustomSelect id="event" name="event">
-                    <option selected disabled value=""> -Y or N-</option>
+                <CustomSelect id="event" name="event" defaultValue="-Y or N-">
+                    <option disabled value="-Y or N-">-Y or N-</option>
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
                 </CustomSelect>
@@ -64,15 +64,15 @@ const CustomForm = () => {
                 <FormInput type="text" id="event-name" name="event-name" />
 
                 <label htmlFor="pick-up">Are you able to pick-up your order in Sequim, WA?</label>
-                <CustomSelect id="pick-up" name="pick-up" required>
-                    <option selected disabled value=""> -Y or N-</option>
+                <CustomSelect id="pick-up" name="pick-up" defaultValue="-Y or N-" required>
+                    <option disabled value="-Y or N-">-Y or N-</option>
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
                 </CustomSelect>
 
                 <label htmlFor="washington">If "No" and you need cookies shipped, are you located in Washington state?</label>
-                <CustomSelect id="washington" name="washington">
-                    <option selected disabled value=""> -Y or N-</option>
+                <CustomSelect id="washington" name="washington" defaultValue="-Y or N-">
+                    <option disabled value="-Y or N-">-Y or N-</option>
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
                 </CustomSelect>
