@@ -1,40 +1,48 @@
 import React from 'react'
 import { IoLogoFacebook, IoLogoInstagram } from 'react-icons/io'
 import { IoLogoTiktok } from 'react-icons/io5'
-import { ContactDiv, ContactSection, StyledAnchorTag, StyledEnv, StyledHTwo, StyledLineItem, StyledMap, IconUl, MixerContainer, MixerImage } from './ContactElements'
+import { FaRegEnvelope } from 'react-icons/fa'
+import { GrMapLocation } from 'react-icons/gr'
 import Mixer from '../../images/sarah-mixer.jpg'
 
 const ContactForm = () => {
     return (
-        <ContactSection>
+        <section className='py-8 font-condensed text-fluid'>
+            <div className='container mx-auto'>
+                <div className='flex flex-wrap'>
+                    <div className='grid grid-cols-2 md-max:grid-rows-2 md-max:grid-cols-none'>
 
-            <MixerContainer>
-                <MixerImage src={Mixer} alt="sarah mixer" />
-            </MixerContainer>
+                        <div>
+                            <img src={Mixer} alt="sarah mixer" className='w-full' />
+                        </div>
 
-            <ContactDiv>
-                <StyledHTwo>Contact us</StyledHTwo>
-                <IconUl>
-                    <StyledAnchorTag href="https://www.instagram.com/cookiedaughters/" target="_blank"><IoLogoInstagram /></StyledAnchorTag>
+                        <div>
+                            <h2 className='text-center uppercase mb-5 text-black'>Contact us</h2>
+                            <div className='text-center text-2xl'>
+                                <a href="https://www.instagram.com/cookiedaughters/" target="_blank" rel="noreferrer" aria-label="Go to Instagram" className='text-black'><IoLogoInstagram className='hover:text-green-250' /></a>
 
-                    <StyledAnchorTag href="https://www.tiktok.com/@cookiedaughters?" target="_blank"><IoLogoTiktok /></StyledAnchorTag>
+                                <a href="https://www.tiktok.com/@cookiedaughters?" target="_blank" rel="noreferrer" aria-label="Go to Tik tok" className='text-black'><IoLogoTiktok className='hover:text-green-250' /></a>
 
-                    <StyledAnchorTag href="https://www.facebook.com/cookiedaughters" target="_blank"><IoLogoFacebook /></StyledAnchorTag>
-                </IconUl>
-                <ul>
-                    <StyledLineItem>
-                        <StyledEnv />
-                        <StyledAnchorTag href="mailto:Sarah@cookiedaughters.com">Sarah@cookiedaughters.com</StyledAnchorTag>
-                    </StyledLineItem>
+                                <a href="https://www.facebook.com/cookiedaughters" target="_blank" rel="noreferrer" aria-label="Go to Facbook" className='text-black'><IoLogoFacebook className='hover:text-green-250' /></a>
+                            </div>
 
-                    <StyledLineItem>
-                        <StyledMap />
-                        <StyledAnchorTag href="https://goo.gl/maps/3mYYmP52UiSrF8hKA" target="_blank">Sequim, WA</StyledAnchorTag>
-                    </StyledLineItem>
-                </ul>
-            </ContactDiv>
+                            <div className='justify-center text-center'>
+                                <div className='flex items-center justify-center py-2'>
+                                    <FaRegEnvelope className='text-2xl mr-2.5 text-center w-7 h-7' />
+                                    <a href="mailto:Sarah@cookiedaughters.com" className='no-underline text-black hover:text-green-250'>Sarah@cookiedaughters.com</a>
+                                </div>
+                                <div className='flex items-center justify-center'>
+                                    <GrMapLocation className='text-2xl mr-2.5 text-center w-7 h-7' />
+                                    <a href="https://goo.gl/maps/3mYYmP52UiSrF8hKA" target="_blank" rel="noreferrer" className='no-underline text-black hover:text-green-250'>Sequim, WA</a>
+                                </div>
+                            </div>
+                        </div>
 
-        </ContactSection>
+                    </div>
+                </div>
+            </div >
+
+        </section >
     )
 }
 

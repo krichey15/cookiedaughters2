@@ -32,7 +32,7 @@ export const HomeLink = styled(Link)`
 
 
 export const AppLogo = styled.img`
-  height: 100%;
+  height: 100% !important;
 `
 
 export const MenuLink = styled(Link)`
