@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 // import SEO from '~/components/seo';
 import Banner from '../components/Banner';
 import LogoThree from '../components/LogoThree';
+import About from '../components/About'
 
 const IndexPage = () => (
   <div>
@@ -13,6 +14,7 @@ const IndexPage = () => (
     </Helmet>
     <LogoThree />
     <Banner />
+    <About />
   </div>
 )
 
