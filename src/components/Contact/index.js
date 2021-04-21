@@ -16,9 +16,11 @@ const ContactForm = () => {
                             <img src={Mixer} alt="sarah mixer" className='w-full' />
                         </div>
 
-                        <div>
-                            <h2 className='text-center uppercase mb-5 text-black'>Contact us</h2>
-                            <div className='text-center text-2xl'>
+                        <div className='flex flex-col items-center justify-center'>
+                            <div>
+                                <h2 className='text-center uppercase mb-5 text-black'>Contact us</h2>
+                            </div>
+                            <div className='text-center text-4xl'>
                                 <a href="https://www.instagram.com/cookiedaughters/" target="_blank" rel="noreferrer" aria-label="Go to Instagram" className='text-black'><IoLogoInstagram className='hover:text-green-250' /></a>
 
                                 <a href="https://www.tiktok.com/@cookiedaughters?" target="_blank" rel="noreferrer" aria-label="Go to Tik tok" className='text-black'><IoLogoTiktok className='hover:text-green-250' /></a>
