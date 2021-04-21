@@ -1,11 +1,11 @@
 import React from 'react';
-import Valentine from '../../images/home-banner.jpg'
+import Daughters from '../../images/home-banner.jpg'
 import { BannerContainer, BannerImage } from './BannerElements';
 
 const Banner = () => {
     return (
         <BannerContainer>
-            <BannerImage src={Valentine} alt="banner-image" />
+            <BannerImage src={Daughters} alt="banner-image" />
         </BannerContainer>
     )
 }
