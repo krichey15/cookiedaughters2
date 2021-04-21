@@ -13,7 +13,7 @@ const ContactForm = () => {
                     <div className='grid grid-cols-2 md-max:grid-rows-2 md-max:grid-cols-none'>
 
                         <div>
-                            <img src={Mixer} alt="sarah mixer" className='w-full' />
+                            <img src={Mixer} alt="sarah mixer" className='w-full h-full rounded-lg' />
                         </div>
 
                         <div className='flex flex-col items-center justify-center'>
