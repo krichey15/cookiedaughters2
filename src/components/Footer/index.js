@@ -4,7 +4,7 @@ import { FooterP } from './FooterElements';
 const Footer = () => {
 
     return (
-        <div>
+        <div className='flex justify-center items-center'>
             <FooterP>
                 © {new Date().getFullYear()} Cookie Daughters, Built by
             {` `}

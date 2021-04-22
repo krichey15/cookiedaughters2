@@ -43,7 +43,7 @@ const Layout = ({ children }) => {
             <Wrapper>
               {children}
             </Wrapper>
-            <Footer/>
+            <Footer />
           </>
         )}
       />
