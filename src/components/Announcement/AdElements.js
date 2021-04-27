@@ -5,8 +5,6 @@ export const AdContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
 `
 
 export const AdBanner = styled.img`
