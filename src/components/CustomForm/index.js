@@ -18,7 +18,7 @@ const CustomForm = () => {
                 <FormInput type="email" id="email" name="email" required />
 
                 <label htmlFor="phone">Phone: </label>
-                <FormInput type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" />
+                <FormInput type="tel" id="phone" name="phone" placeholder="123-456-7890" />
 
                 <label htmlFor="date">Date Needed:</label>
                 <FormInput type="date" id="date" name="date" required />
