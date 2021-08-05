@@ -1,10 +1,12 @@
 import React from 'react'
-import { BoldParagraph, PageText } from './FormTextElements';
+import { PageText, CenteredH1 } from './FormTextElements';
 
 const FormText = () => {
     return (
         <PageText>
-            <p>
+
+            <CenteredH1>Custom orders will be back soon.</CenteredH1>
+            {/* <p>
                Thank you for your interest in ordering custom cookies from Cookie Daughters!
             </p>
 
@@ -32,7 +34,7 @@ const FormText = () => {
             </BoldParagraph>
             <BoldParagraph>
                 Cookies must be paid in full to secure your order.  50% of this payment is a non-refundable deposit should you need to cancel your order.  Orders must be cancelled 1 week before pickup to receive a 50% refund.
-            </BoldParagraph>
+            </BoldParagraph> */}
 
         </PageText>
     )

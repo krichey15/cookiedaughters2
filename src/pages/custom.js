@@ -15,7 +15,7 @@ const CustomOrderPage = () => (
         <Announcement />
         <LogoThree />
         <FormText />
-        <CustomForm />
+        {/* <CustomForm /> */}
     </>
 )
 
