@@ -10,8 +10,3 @@ export const BoldParagraph = styled.p`
     font-family: 'BenchNine', sans-serif;
     font-weight: 700;
 `
-
-export const CenteredH1 = styled.h1`
-    text-align: center;
-    vertical-align: middle;
-`

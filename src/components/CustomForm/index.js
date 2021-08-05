@@ -3,6 +3,25 @@ import { CustomSelect, CustomText, FormButton, FormContainer, FormInput } from '
 
 const CustomForm = () => {
 
+    const addTwoWeeks = function () {
+
+        let today = new Date();
+        let dd = today.getDate() + 14;
+        let mm = today.getMonth() + 1;
+        let yyyy = today.getFullYear();
+
+        if (dd < 10) {
+            dd = '0' + dd
+        }
+        if (mm < 10) {
+            mm = '0' + mm
+        }
+
+        today = yyyy + '-' + mm + '-' + dd;
+
+        return today;
+    }
+
     return (
         <FormContainer>
             <form name="contact" method="POST" encType="multipart/form-data" data-netlify="true">
@@ -20,30 +39,16 @@ const CustomForm = () => {
                 <label htmlFor="phone">Phone: </label>
                 <FormInput type="tel" id="phone" name="phone" placeholder="123-456-7890" />
 
-                <label htmlFor="date">Date Needed:</label>
-                <FormInput type="date" id="date" name="date" required />
+                <label htmlFor="date">Pick-Up Date:</label>
+                <FormInput type="date" id="date" name="date" min={addTwoWeeks()} required />
                 <p><small>Not the day of the event - usually 1 or 2 days before.  What day do you need to be holding your cookies?</small></p>
 
                 <label htmlFor="cookie-count">How many cookies would you like to order?</label>
-                <FormInput type="number" id="cookie-count" name="cookie-count" min="12" max="100000" placeholder="12" required />
-                <p><small>Min is 1 dozen but you can order 17 cookies if that is how many you need.</small></p>
+                <FormInput type="number" id="cookie-count" name="cookie-count" min="24" max="100000" placeholder="24" required />
+                <p><small>Minimum order is 2 dozen.</small></p>
 
                 <label htmlFor="mini-cookies">Would you like to add 1 dozen mini-cookies?</label>
                 <CustomSelect id="mini-cookies" name="mini-cookies" defaultValue="-Y or N-">
-                    <option disabled value="-Y or N-">-Y or N-</option>
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                </CustomSelect>
-
-                <label htmlFor="cake-topper">Would you like to add on a cake topper?</label>
-                <CustomSelect id="cake-topper" name="cake-topper" defaultValue="-Y or N-">
-                    <option disabled value="-Y or N-">-Y or N-</option>
-                    <option value="yes">Yes</option>
-                    <option value="no">No</option>
-                </CustomSelect>
-
-                <label htmlFor="individual">Do you need your cookies individually wrapped with a bow?</label>
-                <CustomSelect id="individual" name="individual" defaultValue="-Y or N-">
                     <option disabled value="-Y or N-">-Y or N-</option>
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
