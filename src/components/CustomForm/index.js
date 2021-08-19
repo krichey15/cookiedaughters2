@@ -6,7 +6,9 @@ const CustomForm = () => {
     const addTwoWeeks = function () {
 
         let today = new Date();
-        let dd = today.getDate() + 14;
+        today.setDate(today.getDate() + 14);
+
+        let dd = today.getDate();
         let mm = today.getMonth() + 1;
         let yyyy = today.getFullYear();
 
@@ -16,9 +18,10 @@ const CustomForm = () => {
         if (mm < 10) {
             mm = '0' + mm
         }
+        console.log(today)
 
         today = yyyy + '-' + mm + '-' + dd;
-
+        console.log(today)
         return today;
     }
 
