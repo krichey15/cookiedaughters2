@@ -17,3 +17,9 @@ export const CenteredX = styled.div`
     font-size: clamp(1.2rem, 1.5vw, 2rem);
     text-align: center;
 `
+
+export const CustomAnchor = styled.a`
+    font-weight: 700;
+    text-decoration: none;
+    color: #9ad3c2;
+`

@@ -48,3 +48,8 @@ export const AnswerDropdown = styled.div`
     border-top: 5px solid #9ad3c2;
 
 `
+
+export const CustomAnchor = styled.a`
+    text-decoration: none;
+    color: black;
+`

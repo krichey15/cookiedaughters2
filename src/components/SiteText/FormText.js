@@ -1,5 +1,5 @@
 import React from 'react';
-import { BoldParagraph, PageText, CenteredX } from './FormTextElements';
+import { BoldParagraph, PageText, CenteredX, CustomAnchor } from './FormTextElements';
 import Terms from '../../assets/cd_terms.pdf';
 
 const FormText = () => {
@@ -45,7 +45,7 @@ const FormText = () => {
 
                 <br />
 
-                <li>Please see our Terms and Conditions <a href={Terms} target='_blank'>Here</a></li>
+                <li>Please see our Terms and Conditions <CustomAnchor href={Terms} target='_blank' rel="noreferrer">HERE</CustomAnchor></li>
             </ul>
 
         </PageText>

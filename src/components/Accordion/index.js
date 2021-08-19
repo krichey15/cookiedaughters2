@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
-import { AccordionContainer, AnswerDropdown, FaqContainer, QuestionWrapper } from './AccordionElements'
-import { FaqData } from './FaqData'
-import { IconContext } from 'react-icons'
+import React, { useState } from 'react';
+import { AccordionContainer, AnswerDropdown, CustomAnchor, FaqContainer, QuestionWrapper } from './AccordionElements';
+import { FaqData } from './FaqData';
+import { IconContext } from 'react-icons';
 import { FiPlus, FiMinus } from 'react-icons/fi';
+import Care from '../../assets/cookie_care.pdf';
 
 const Accordion = () => {
     const [clicked, setClicked] = useState(false);
@@ -35,9 +36,14 @@ const Accordion = () => {
                             </React.Fragment>
                         )
                     })}
+                    <QuestionWrapper>
+                        <CustomAnchor href={Care} target='_blank' rel="noreferrer">
+                            <h2>How do I care for my cookies?</h2>
+                        </CustomAnchor>
+                    </QuestionWrapper>
                 </FaqContainer>
             </AccordionContainer>
-        </IconContext.Provider>
+        </IconContext.Provider >
     )
 }
 
