@@ -18,7 +18,6 @@ const CustomForm = () => {
         if (mm < 10) {
             mm = '0' + mm
         }
-        console.log(today)
 
         today = yyyy + '-' + mm + '-' + dd;
         console.log(today)
