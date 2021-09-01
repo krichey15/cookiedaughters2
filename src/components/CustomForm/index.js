@@ -23,7 +23,7 @@ const CustomForm = () => {
     }
 
     return (
-        < FormContainer >
+        <FormContainer>
             <form name="contact" method="POST" encType="multipart/form-data" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />
 
@@ -41,6 +41,8 @@ const CustomForm = () => {
 
                 <label htmlFor="date">Pick-Up Date:</label>
                 <DatePicker
+                    id="date"
+                    name="date"
                     selected={selectedDate}
                     onChange={date => setSelectedDate(date)}
                     minDate={addTwoWeeks()}
@@ -48,6 +50,7 @@ const CustomForm = () => {
                     filterDate={date => date.getDay() !== 0 && date.getDay() !== 1 && date.getDay() !== 2 && date.getDay() !== 3}
                     showYearDropdown
                     scrollableMonthYearDropdown
+                    required
                 />
                 <p><small>Not the day of the event - usually 1 or 2 days before.  What day do you need to be holding your cookies?</small></p>
 
@@ -56,6 +59,13 @@ const CustomForm = () => {
                 <p><small>Minimum order is 2 dozen.</small></p>
 
                 <label htmlFor="mini-cookies">Would you like to add 1 dozen mini-cookies?</label>
+                <CustomSelect id="mini-cookies" name="mini-cookies" defaultValue="-Y or N-">
+                    <option disabled value="-Y or N-">-Y or N-</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </CustomSelect>
+
+                <label htmlFor="sugar-cookies">Would you like to add 1 dozen mini-cookies?</label>
                 <CustomSelect id="mini-cookies" name="mini-cookies" defaultValue="-Y or N-">
                     <option disabled value="-Y or N-">-Y or N-</option>
                     <option value="yes">Yes</option>

@@ -26,7 +26,9 @@ const FormText = () => {
             </ul>
 
             <BoldParagraph>Mini Cookie Add On - Cute little cookies to match your custom set</BoldParagraph>
-            <p>$25 per dozen/1 dozen order minimum to be added to any custom order Cookies will range from 1” - 2” in size</p>
+            <ul>
+                <li>$25 per dozen/1 dozen order minimum to be added to any custom order Cookies will range from 1” - 2” in size</li>
+            </ul>
 
             <CenteredX>
                 <h2>COOKIE INFO</h2>
