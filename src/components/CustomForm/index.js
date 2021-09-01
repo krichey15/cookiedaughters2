@@ -1,31 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 import { CustomSelect, CustomText, FormButton, FormContainer, FormInput } from './CustomFormElements';
 
 const CustomForm = () => {
+    const [selectedDate, setSelectedDate] = useState(null)
 
     const addTwoWeeks = function () {
 
         let today = new Date();
         today.setDate(today.getDate() + 14);
 
-        let dd = today.getDate();
-        let mm = today.getMonth() + 1;
-        let yyyy = today.getFullYear();
+        // let dd = today.getDate();
+        // let mm = today.getMonth() + 1;
+        // let yyyy = today.getFullYear();
 
-        if (dd < 10) {
-            dd = '0' + dd
-        }
-        if (mm < 10) {
-            mm = '0' + mm
-        }
+        // if (dd < 10) {
+        //     dd = '0' + dd
+        // }
+        // if (mm < 10) {
+        //     mm = '0' + mm
+        // }
 
-        today = yyyy + '-' + mm + '-' + dd;
-        console.log(today)
+        // today = yyyy + '-' + mm + '-' + dd;
+        // console.log(today)
         return today;
     }
 
     return (
-        <FormContainer>
+        < FormContainer >
             <form name="contact" method="POST" encType="multipart/form-data" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact" />
 
@@ -42,7 +45,14 @@ const CustomForm = () => {
                 <FormInput type="tel" id="phone" name="phone" placeholder="123-456-7890" />
 
                 <label htmlFor="date">Pick-Up Date:</label>
-                <FormInput type="date" id="date" name="date" min={addTwoWeeks()} required />
+                <DatePicker
+                    selected={selectedDate}
+                    onChange={date => setSelectedDate(date)}
+                    minDate={addTwoWeeks()}
+                    filterDate={date => date.getDay() !== 0 && date.getDay() !== 1 && date.getDay() !== 2 && date.getDay() !== 3}
+                    showYearDropdown
+                    scrollableMonthYearDropdown
+                />
                 <p><small>Not the day of the event - usually 1 or 2 days before.  What day do you need to be holding your cookies?</small></p>
 
                 <label htmlFor="cookie-count">How many cookies would you like to order?</label>
@@ -96,7 +106,7 @@ const CustomForm = () => {
 
             </form>
 
-        </FormContainer>
+        </FormContainer >
     )
 }
 
