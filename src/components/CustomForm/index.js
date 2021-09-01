@@ -11,19 +11,14 @@ const CustomForm = () => {
         let today = new Date();
         today.setDate(today.getDate() + 14);
 
-        // let dd = today.getDate();
-        // let mm = today.getMonth() + 1;
-        // let yyyy = today.getFullYear();
+        return today;
+    }
 
-        // if (dd < 10) {
-        //     dd = '0' + dd
-        // }
-        // if (mm < 10) {
-        //     mm = '0' + mm
-        // }
+    const addTwoMonths = function () {
 
-        // today = yyyy + '-' + mm + '-' + dd;
-        // console.log(today)
+        let today = new Date();
+        today.setDate(today.getDate() + 60);
+
         return today;
     }
 
@@ -49,6 +44,7 @@ const CustomForm = () => {
                     selected={selectedDate}
                     onChange={date => setSelectedDate(date)}
                     minDate={addTwoWeeks()}
+                    maxDate={addTwoMonths()}
                     filterDate={date => date.getDay() !== 0 && date.getDay() !== 1 && date.getDay() !== 2 && date.getDay() !== 3}
                     showYearDropdown
                     scrollableMonthYearDropdown

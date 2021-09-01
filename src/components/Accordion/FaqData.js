@@ -9,7 +9,7 @@ export const FaqData = [
     },
     {
         question: 'How many cookies can I order?',
-        answer: 'We require a minimum of 1 dozen cookies for custom orders.'
+        answer: 'We require a minimum of 2 dozen cookies for custom orders.'
     },
     {
         question: 'Are your sugar cookies flavored?',
