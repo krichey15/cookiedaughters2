@@ -65,8 +65,8 @@ const CustomForm = () => {
                     <option value="no">No</option>
                 </CustomSelect>
 
-                <label htmlFor="sugar-cookies">Would you like to add 1 dozen mini-cookies?</label>
-                <CustomSelect id="mini-cookies" name="mini-cookies" defaultValue="-Y or N-">
+                <label htmlFor="sugar-cookies">Would you like to add 1 dozen Simple Circle Cookies?</label>
+                <CustomSelect id="sugar-cookies" name="sugar-cookies" defaultValue="-Y or N-">
                     <option disabled value="-Y or N-">-Y or N-</option>
                     <option value="yes">Yes</option>
                     <option value="no">No</option>
