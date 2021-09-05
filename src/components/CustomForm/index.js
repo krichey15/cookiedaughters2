@@ -6,10 +6,10 @@ import { CustomSelect, CustomText, FormButton, FormContainer, FormInput } from '
 const CustomForm = () => {
     const [selectedDate, setSelectedDate] = useState(null)
 
-    const addTwoWeeks = function () {
+    const addFourWeeks = function () {
 
         let today = new Date();
-        today.setDate(today.getDate() + 14);
+        today.setDate(today.getDate() + 28);
 
         return today;
     }
@@ -17,7 +17,7 @@ const CustomForm = () => {
     const addTwoMonths = function () {
 
         let today = new Date();
-        today.setDate(today.getDate() + 60);
+        today.setDate(today.getDate() + 88);
 
         return today;
     }
@@ -45,7 +45,7 @@ const CustomForm = () => {
                     name="date"
                     selected={selectedDate}
                     onChange={date => setSelectedDate(date)}
-                    minDate={addTwoWeeks()}
+                    minDate={addFourWeeks()}
                     maxDate={addTwoMonths()}
                     filterDate={date => date.getDay() !== 0 && date.getDay() !== 1 && date.getDay() !== 2 && date.getDay() !== 3}
                     showYearDropdown
