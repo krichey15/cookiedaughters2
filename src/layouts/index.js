@@ -11,9 +11,7 @@ import Sidebar from '../components/Sidebar'
 import Footer from '../components/Footer'
 
 const Wrapper = styled.div`
-  margin: 0 auto;
-  max-width: 66%;
-  padding: 0px 1.0875rem 1.45rem;
+  max-width: 100%;
 `
 
 const Layout = ({ children }) => {

@@ -29,8 +29,8 @@ module.exports = {
         name: `cookie-daughters`,
         short_name: `Home Page`,
         start_url: `/`,
-        background_color: `#A5DAC8`,
-        theme_color: `#A5DAC8`,
+        background_color: `#9ad3c2`,
+        theme_color: `#9ad3c2`,
         display: `minimal-ui`,
         icon: `src/images/cookie-icon.jpg`, // This path is relative to the root of the site.
       },
