@@ -13,7 +13,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                 <SidebarMenu>
                     <SidebarLink to="/" onClick={toggle}>HOME</SidebarLink>
                     <SidebarLink to="/custom" onClick={toggle}>CUSTOM ORDERS</SidebarLink>
-                    <SidebarLink to="/shop" onClick={toggle}>shop</SidebarLink>
+                    <SidebarLink to="/shop" onClick={toggle}>SHOP</SidebarLink>
                     <SidebarLink to="/faq" onClick={toggle}>FAQ</SidebarLink>
                     <SidebarLink to="/contact" onClick={toggle}>CONTACT</SidebarLink>
                 </SidebarMenu>
