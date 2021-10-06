@@ -31,7 +31,7 @@ const Navigation = ({ siteTitle, toggle }) => {
 
       <Container>
         <MenuLink to="/custom" activeStyle={activeStyles}>CUSTOM ORDERS</MenuLink>
-        <MenuLink to="/cookies" activeStyle={activeStyles}>COOKIES</MenuLink>
+        <MenuLink to="/shop" activeStyle={activeStyles}>SHOP</MenuLink>
         <MenuLink to="/faq" activeStyle={activeStyles}>FAQ</MenuLink>
         <MenuLink to="/contact" activeStyle={activeStyles}>CONTACT</MenuLink>
       </Container>
