@@ -14,7 +14,7 @@ const Footer = () => {
 
                 <a href="https://www.facebook.com/cookiedaughters" target="_blank" rel="noreferrer" aria-label="Go to Facbook" className='text-black'><IoLogoFacebook className='hover:text-green-250' /></a>
 
-                <a href="https://www.amazon.com/shop/cookiedaughters" target="_blank" rel="noreferrer" aria-label="Go to Facbook" className='text-black'><IoLogoAmazon className='hover:text-green-250' /></a>
+                <a href="https://www.amazon.com/shop/cookiedaughters" target="_blank" rel="noreferrer" aria-label="Go to Amazon" className='text-black'><IoLogoAmazon className='hover:text-green-250' /></a>
             </IconDiv>
             <div className='flex justify-center items-center'>
                 <FooterP>
