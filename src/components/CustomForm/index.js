@@ -45,8 +45,8 @@ const CustomForm = () => {
                     name="date"
                     selected={selectedDate}
                     onChange={date => setSelectedDate(date)}
-                    minDate={addFourWeeks()}
-                    maxDate={addTwoMonths()}
+                    // minDate={addFourWeeks()}
+                    // maxDate={addTwoMonths()}
                     filterDate={date => date.getDay() !== 0 && date.getDay() !== 1 && date.getDay() !== 2 && date.getDay() !== 3}
                     showYearDropdown
                     scrollableMonthYearDropdown
@@ -103,9 +103,9 @@ const CustomForm = () => {
 
 
                 <label htmlFor="photos">Add any inspirational photos here:</label>
-                <FormInput type="file" id="photos" name="photos" placeholder="Upload Photo" accept="image/*,.pdf" />
-                <FormInput type="file" id="photos2" name="photos2" placeholder="Upload Photo" accept="image/*,.pdf" />
-                <FormInput type="file" id="photos3" name="photos3" placeholder="Upload Photo" accept="image/*,.pdf" />
+                <FormInput type="file" id="photos" name="photos" accept="image/*,.pdf" />
+                <FormInput type="file" id="photos2" name="photos2" accept="image/*,.pdf" />
+                <FormInput type="file" id="photos3" name="photos3" accept="image/*,.pdf" />
                 <br />
 
                 <FormButton type="submit">Bake</FormButton>
